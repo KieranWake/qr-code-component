@@ -11,9 +11,9 @@
   <style>
 
     @font-face {
-      font-family: 'Outfit';
-      src: url('fonts/Outfit-Black.ttf') format('truetype');
-      font-weight: normal;
+      font-family: 'Outfit-Thin';
+      src: url('fonts/Outfit-Thin.ttf') format('truetype');
+      font-weight: 400;
       font-style: normal;
     }
 
@@ -23,20 +23,32 @@
       padding: 0;
     }
 
-    p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 75vh;
-      font-family: 'Outfit';
+    body {
+      overflow: hidden;
+
+    }
+
+    .content {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     
   </style>
 </head>
 <body>
-  <div>
-    <p>Scan the QR code to visit front-end</p>
+  <div class="container">
+    <div class="image">
+
+    </div>
+    <div class="content">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    
   </div>
 
   
